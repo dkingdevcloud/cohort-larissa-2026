@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../output.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<div class="relative w-[700px] h-[480px] bg-emerald-700 p-6 rounded-lg overflow-hidden flex items-center justify-center">
+  <!-- Alternating Field Stripes Background -->
+  <div class="absolute inset-0 flex">
+    <div class="flex-1 bg-emerald-700"></div>
+    <div class="flex-1 bg-emerald-600"></div>
+    <div class="flex-1 bg-emerald-700"></div>
+    <div class="flex-1 bg-emerald-600"></div>
+    <div class="flex-1 bg-emerald-700"></div>
+    <div class="flex-1 bg-emerald-600"></div>
+    <div class="flex-1 bg-emerald-700"></div>
+    <div class="flex-1 bg-emerald-600"></div>
+    <div class="flex-1 bg-emerald-700"></div>
+    <div class="flex-1 bg-emerald-600"></div>
+  </div>
+
+  <!-- Main Pitch Container & Outer Boundary -->
+  <div class="relative w-full h-full border-2 border-emerald-100/70">
+    
+    <!-- Halfway Line -->
+    <div class="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-0.5 bg-emerald-100/70"></div>
+    
+    <!-- Center Circle & Spot -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 border-2 border-emerald-100/70 rounded-full flex items-center justify-center">
+      <div class="w-1.5 h-1.5 bg-emerald-100/70 rounded-full"></div>
+    </div>
+
+    <!-- Left Penalty Area -->
+    <div class="absolute left-0 top-1/2 -translate-y-1/2 w-28 h-64 border-r-2 border-y-2 border-emerald-100/70">
+      <!-- Penalty Spot -->
+      <div class="absolute right-6 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-emerald-100/70 rounded-full"></div>
+      <!-- Goal Area -->
+      <div class="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-28 border-r-2 border-y-2 border-emerald-100/70"></div>
+      <!-- Penalty Arc -->
+      <div class="absolute -right-10 top-1/2 -translate-y-1/2 w-20 h-20 border-r-2 border-emerald-100/70 rounded-full clip-arc"></div>
+    </div>
+
+    <!-- Right Penalty Area -->
+    <div class="absolute right-0 top-1/2 -translate-y-1/2 w-28 h-64 border-l-2 border-y-2 border-emerald-100/70">
+      <!-- Penalty Spot -->
+      <div class="absolute left-6 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-emerald-100/70 rounded-full"></div>
+      <!-- Goal Area -->
+      <div class="absolute right-0 top-1/2 -translate-y-1/2 w-10 h-28 border-l-2 border-y-2 border-emerald-100/70"></div>
+      <!-- Penalty Arc -->
+      <div class="absolute -left-10 top-1/2 -translate-y-1/2 w-20 h-20 border-l-2 border-emerald-100/70 rounded-full"></div>
+    </div>
+
+    <!-- Corner Arcs -->
+    <div class="absolute top-0 left-0 w-4 h-4 border-r-2 border-b-2 border-emerald-100/70 rounded-br-full"></div>
+    <div class="absolute bottom-0 left-0 w-4 h-4 border-r-2 border-t-2 border-emerald-100/70 rounded-tr-full"></div>
+    <div class="absolute top-0 right-0 w-4 h-4 border-l-2 border-b-2 border-emerald-100/70 rounded-bl-full"></div>
+    <div class="absolute bottom-0 right-0 w-4 h-4 border-l-2 border-t-2 border-emerald-100/70 rounded-tl-full"></div>
+
+    <!-- PLAYERS (4-4-2 Formation Layout) -->
+
+    <!-- Goalkeeper (Green) -->
+    <div class="absolute right-3 top-1/2 -translate-y-1/2 w-7 h-7 bg-green-700 border-2 border-emerald-100 rounded-full flex items-center justify-center shadow-md">
+      <div class="w-3 h-3 bg-green-800 rounded-full"></div>
+    </div>
+
+    <!-- Defenders (4 Red) -->
+    <div class="absolute right-1/4 top-[12%] -translate-y-1/2 w-7 h-7 bg-red-600 border-2 border-emerald-100 rounded-full flex items-center justify-center shadow-md">
+      <div class="w-3 h-3 bg-red-800 rounded-full"></div>
+    </div>
+    <div class="absolute right-1/4 top-[37%] -translate-y-1/2 w-7 h-7 bg-red-600 border-2 border-emerald-100 rounded-full flex items-center justify-center shadow-md">
+      <div class="w-3 h-3 bg-red-800 rounded-full"></div>
+    </div>
+    <div class="absolute right-1/4 top-[63%] -translate-y-1/2 w-7 h-7 bg-red-600 border-2 border-emerald-100 rounded-full flex items-center justify-center shadow-md">
+      <div class="w-3 h-3 bg-red-800 rounded-full"></div>
+    </div>
+    <div class="absolute right-1/4 top-[88%] -translate-y-1/2 w-7 h-7 bg-red-600 border-2 border-emerald-100 rounded-full flex items-center justify-center shadow-md">
+      <div class="w-3 h-3 bg-red-800 rounded-full"></div>
+    </div>
+
+    <!-- Midfielders (4 Red) -->
+    <div class="absolute left-1/2 top-[12%] -translate-y-1/2 -translate-x-1/2 w-7 h-7 bg-red-600 border-2 border-emerald-100 rounded-full flex items-center justify-center shadow-md">
+      <div class="w-3 h-3 bg-red-800 rounded-full"></div>
+    </div>
+    <div class="absolute left-1/2 top-[37%] -translate-y-1/2 -translate-x-1/2 w-7 h-7 bg-red-600 border-2 border-emerald-100 rounded-full flex items-center justify-center shadow-md">
+      <div class="w-3 h-3 bg-red-800 rounded-full"></div>
+    </div>
+    <div class="absolute left-1/2 top-[63%] -translate-y-1/2 -translate-x-1/2 w-7 h-7 bg-red-600 border-2 border-emerald-100 rounded-full flex items-center justify-center shadow-md">
+      <div class="w-3 h-3 bg-red-800 rounded-full"></div>
+    </div>
+    <div class="absolute left-1/2 top-[88%] -translate-y-1/2 -translate-x-1/2 w-7 h-7 bg-red-600 border-2 border-emerald-100 rounded-full flex items-center justify-center shadow-md">
+      <div class="w-3 h-3 bg-red-800 rounded-full"></div>
+    </div>
+
+    <!-- Forwards (2 Red) -->
+    <div class="absolute left-1/4 top-[37%] -translate-y-1/2 w-7 h-7 bg-red-600 border-2 border-emerald-100 rounded-full flex items-center justify-center shadow-md">
+      <div class="w-3 h-3 bg-red-800 rounded-full"></div>
+    </div>
+    <div class="absolute left-1/4 top-[63%] -translate-y-1/2 w-7 h-7 bg-red-600 border-2 border-emerald-100 rounded-full flex items-center justify-center shadow-md">
+      <div class="w-3 h-3 bg-red-800 rounded-full"></div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
